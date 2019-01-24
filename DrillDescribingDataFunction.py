@@ -40,3 +40,13 @@ def modes(ages):
 
 
 modes(ages)
+
+#nest this into the loop before the return
+def summarystats(ages):
+    print("mean: ",np.mean(ages))
+    print("median: ",np.median(ages))
+    print("variance: ",np.var(ages))
+    print("std. deviation :",np.std(ages))
+    print("standard error :",np.std(ages)/np.sqrt(len(ages)-1))
+    print(modes(ages))
+summarystats(ages)

@@ -11,6 +11,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 
+import os
+print(os.getcwd())
+os.chdir('C:\\Users\\liuth\\Documents\\Data')
+
 mydata = pd.read_csv('Admission_Predict.csv')
 mydata.columns = ['SerialNo.', 'GREScore',\
                   'TOEFLScore', 'UniversityRating', 'SOP',\
